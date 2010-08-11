@@ -18,7 +18,7 @@
                     <small>|</small>
                     <small>PHPCabal</small>
                     <small>|</small>
-                    <small>2010</small>
+                    <small><?php echo date("Y"); ?></small>
                     <small>|</small>
                     <small>GPLv3</small>
                 </p>
