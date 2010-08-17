@@ -12,6 +12,8 @@
                 </p>
             </div>
 
+<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/navbar.inc.php' ); ?>
+
             <div id="pie">
                 <p>
                     <small>acerca</small>
