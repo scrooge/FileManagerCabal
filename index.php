@@ -11,7 +11,7 @@
                     Hola, mundo!
                 </p>
             </div>
-
+<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/filereader.inc.php' ); ?>
 <?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/navbar.inc.php' ); ?>
 
             <div id="pie">
