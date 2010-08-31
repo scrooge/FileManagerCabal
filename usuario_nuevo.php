@@ -6,7 +6,7 @@ if ( isset($_POST['enviar']) && $_POST['enviar'] === 'Enviar') {
 
     // validar si nombre es string
     if ( is_numeric($_POST['nombre'])) {
-        $mensaje = "Error, no se permiten caracteres númericos en este campo";
+        $mensaje = "Error, no se permiten caracteres numéricos en este campo";
     }
 }
 
