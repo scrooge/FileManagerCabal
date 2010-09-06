@@ -1,4 +1,5 @@
-<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/header.inc.php' ); ?>
+<?php require_once( 'lib/config.inc.php' ); ?>
+<?php require_once( FMC_LIB_PATH . '/header.inc.php' ); ?>
 
         <div id="general">
             <div id="encabezado">
@@ -6,26 +7,20 @@
                 <span>El manejador de archivos de PHPCabal</span>
             </div>
 
-<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/nav.inc.php' ); ?>
+<?php require_once( FMC_LIB_PATH . '/nav.inc.php' ); ?>
 
             <div id="contenido">
                 <p>
                     Hola, mundo!
                 </p>
             </div>
-<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/filereader.inc.php' ); ?>
-<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/navbar.inc.php' ); ?>
+//<?php require_once( $_SERVER['DOCUMENT_ROOT'] . 
+//'/lib/filereader.inc.php' ); ?>
+// <?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/navbar.inc.php' 
+//); ?>
 
-            <div id="pie">
-                <p>                           
-                    <span><a href="/acerca.php">acerca</a></span>
-                    <span>|</span>
-                    <span><a href="http://groups.google.com/group/PHPCabal">PHPCabal</a></span>
-                    <span>|</span>
-                    <span><a href="http://en.wikipedia.org/wiki/2010"><?php echo date( 'Y' ); ?></a></span>
-                    <span>|</span>
-                    <span><a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a></span>
-              </p>
-           </div>
+            <div id="login">
+<?php require_once( FMC_LIB_PATH . '/login.inc.php' ); ?>
+            </div>
 
-<?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/footer.inc.php' ); ?>
+<?php require_once( FMC_LIB_PATH . '/footer.inc.php' ); ?>
