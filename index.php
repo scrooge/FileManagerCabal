@@ -6,8 +6,8 @@ $url_name = "/" . basename(dirname($name_path));
 $app_path = dirname($name_path);
 
 //Declarar las constantes
-	define ( 'FMC_APP_PATH", $app_path );
-	define ( 'FMC_URL, $url_name);
+	define ( 'FMC_APP_PATH', $app_path );
+	define ( 'FMC_URL', $url_name);
 
 //Llamada de configuración general
  require_once( FMC_APP_PATH . '/lib/config_system.inc.php' );
