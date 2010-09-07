@@ -1,4 +1,18 @@
-<?php require_once( 'lib/config.inc.php' ); ?>
+<?php
+
+//Autoconfiguración de rutas de archivo 
+$name_path = __FILE__;
+$url_name = "/" . basename(dirname($name_path));
+$app_path = dirname($name_path);
+
+//Declarar las constantes
+	define ( 'FMC_APP_PATH", $app_path );
+	define ( 'FMC_URL, $url_name);
+
+//Llamada de configuración general
+ require_once( FMC_APP_PATH . '/lib/config_system.inc.php' );
+
+?>
 <?php require_once( FMC_LIB_PATH . '/header.inc.php' ); ?>
 
         <div id="general">
@@ -14,10 +28,6 @@
                     Hola, mundo!
                 </p>
             </div>
-//<?php require_once( $_SERVER['DOCUMENT_ROOT'] . 
-//'/lib/filereader.inc.php' ); ?>
-// <?php require_once( $_SERVER['DOCUMENT_ROOT'] . '/lib/navbar.inc.php' 
-//); ?>
 
             <div id="login">
 <?php require_once( FMC_LIB_PATH . '/login.inc.php' ); ?>
