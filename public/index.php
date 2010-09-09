@@ -1,18 +1,5 @@
-<?php
+<?php require_once( '../application/config.inc.php' ); ?>
 
-//Autoconfiguración de rutas de archivo 
-$name_path = __FILE__;
-$url_name = "/" . basename(dirname($name_path));
-$app_path = dirname($name_path);
-
-//Declarar las constantes
-	define ( 'FMC_APP_PATH', $app_path );
-	define ( 'FMC_URL', $url_name);
-
-//Llamada de configuración general
- require_once( FMC_APP_PATH . '/lib/config_system.inc.php' );
-
-?>
 <?php require_once( FMC_LIB_PATH . '/header.inc.php' ); ?>
 
         <div id="general">
@@ -21,16 +8,18 @@ $app_path = dirname($name_path);
                 <span>El manejador de archivos de PHPCabal</span>
             </div>
 
+            <div id="navegacion">
 <?php require_once( FMC_LIB_PATH . '/nav.inc.php' ); ?>
+            </div>
+
+            <div id="login">
+<?php require_once( FMC_FORM_PATH . '/login.frm.php' ); ?>
+            </div>
 
             <div id="contenido">
                 <p>
                     Hola, mundo!
                 </p>
-            </div>
-
-            <div id="login">
-<?php require_once( FMC_LIB_PATH . '/login.inc.php' ); ?>
             </div>
 
 <?php require_once( FMC_LIB_PATH . '/footer.inc.php' ); ?>
