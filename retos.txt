@@ -1,18 +1,19 @@
-- Parsear un archivo xml; con los elementos:
-<xml definition>
-<nav>
-    <link>
-	<titulo></titulo>
-        <url></url>
-    </link>
-</nav
+//Pasos para la creación de la base de datos
 
-y, de ahí, generamos una lista de links de la siguiente manera
+//shell de sistema
+mysql -h localhost -u root -p
 
-<ul>
-  <li><a href="http://url/">titulo</a></li>
-</ul>
-
-- Crear una DB y conectarse usando mysqli_init y mysqli_real_connect (buscar en manual php.net)
-
-- Crear una tabla 'usuarios' y ponerle los campos (id, usuario, password y email) e insertar unos 5 usuarios. No usar herramientas con interfaz gráfica (GUI); solo SQL.
+//shell sql
+SHOW DATABASES;
+GRANT ALL on usuarios.* TO 'fmcabal'@'localhost' IDENTIFIED BY 'f4m7c@a.ba3l';
+SHOW DATABASES;
+CREATE DATABASE usuarios;
+SHOW DATABASES;
+USE usuarios;
+CREATE TABLE usuarios( id int not null primary key auto_increment, usuario VARCHAR(45) not null, password VARCHAR(12) not null, email VARCHAR(25) not null);
+SELECT * TABLE;
+SHOW TABLES;
+DESCRIBE usuarios;
+INSERT INTO usuarios VALUES("", 'scrooge', 'amargado', 'scrooge@github.com'), ("", 'richistron', '12345', 'richistron@github.com'), ("", 'betology', 'asdf', 'betology@github.com'), ("", 'Richard Couture', 'a9Gin9(&', 'richard_couture@imat.org'), ("", 'Renich Bon Ciric', 'loveatfedora', 'renich@woralelandia.com');
+SELECT * FROM usuarios;
+quit;
