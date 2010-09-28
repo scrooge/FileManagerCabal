@@ -3,20 +3,21 @@
 $mensaje = '';
 
 if ( isset($_POST['enviar']) && $_POST['enviar'] === 'Enviar') {
+     // validar si nombre es string
+   $usuario_saneado = filter_var( $_POST['usuario'], FILTER_SANITIZE_STRING );
+    if( filter_var( $usuario_saneado, FILTER_VALIDATE_REGEXP, array( "options" => array( "regexp" => "/^([a-zA-Z0-9]+$.*)/" ) ) ) ) {
+   	
+       $mensaje = 'Simón; todo jaló a la perfect: ' . $usuario_saneado;
+ 	
+    } else {
 
-    // validar si nombre es string
-
-    if ( is_numeric($_POST['nombre'])) {
-        $mensaje = "Error, no se permiten caracteres numéricos en este campo";
-
-    if ( is_string($_POST['nombre'])) {
-        $mensaje = "Oh, tu teniendou nombre de número, tonto!!!";
-    }
-
-
+       $mensaje = 'Estás jodido...' . $usuario_saneado;
+		}
 }
+
 
 require_once( FMC_FORM_PATH . '/login.frm.php' );
 
 echo $mensaje;
+ 
 ?>
