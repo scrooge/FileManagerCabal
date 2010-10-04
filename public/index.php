@@ -13,7 +13,7 @@
             </div>
 
             <div id="login">
-<?php require_once( FMC_FORM_PATH . '/login.frm.php' ); ?>
+<?php require_once( FMC_LIB_PATH . '/login.inc.php' ); ?>
             </div>
 
             <div id="contenido">
