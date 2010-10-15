@@ -8,10 +8,10 @@
 define( 'FMC_DB_HOST', 'localhost' );
 
 // usuario (no usar root!!)
-define( 'FMC_DB_USER', 'fmcabalUser02' );
+define( 'FMC_DB_USER', 'fmcabal' );
 
 // contraseña
-define( 'FMC_DB_PASSWORD', 'P4s5w@r6' );
+define( 'FMC_DB_PASSWORD', 'password' );
 
 // nombre de la base de datos
 define( 'FMC_DB_DATABASE', 'fmcabal' );
