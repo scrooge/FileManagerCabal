@@ -1,3 +1,22 @@
-- *~
-- tmp/*
-- application/db.inc.php
+#
+# Exclusiones
+#
+
+# archivos de configuración
+application/db.inc.php
+application/sessions/
+application/files/
+
+# archivos generados por el sistema
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+
+#
+# Inclusiones
+#
+
+!application/sessions/.gitignore
+!application/files/.gitignore
