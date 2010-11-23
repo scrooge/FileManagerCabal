@@ -50,12 +50,12 @@ function ls()
 //mostrar los datos en marco
 		echo '<div class="path">'.$path.'</div>';
 		echo '<table class="list">';
-		echo '<tr class="header"> <th class="left"><a href="select.php">Eliminar Archivo</a></th><th class="filename">Nombre</th><th class="date">Fecha</th>';
+		echo '<tr class="header"> <th class="left"><a href="erase.inc.php">Eliminar Archivo</a></th><th class="filename">Nombre</th><th class="date">Fecha</th>';
 		echo '<th class="size">Tamaño</th><th></th></tr>'."\n"; 
 //listado	
 		for($i=0; $i<count($pn); $i++)
 				{
-			echo '<form method="get" action="descarga1.php?file=" name="forma'.$i.'">';			
+			echo '<form method="get" action="descarga.php?file=" name="forma'.$i.'">';			
 			echo '<tr class="' . 'fila_' .($i%2). '">';
 			echo '<td></td><td class="filename"> <a href="#" onclick="document.forma'.$i.'.submit();return false;'.'">'.$pn[$i].'</a> </td> <td class="date">'.$pf[$i].'</td> <td class="size">'.$pt[$i].' Bytes</td> <td class="rigth"></td> </tr>'."\n";
 			echo '<input type="hidden" name="file" value="'.$pn[$i].'" /> </form>';				

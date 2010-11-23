@@ -21,14 +21,14 @@ function lsselect()
 //Mostrar los archivos en select
 		echo '
 		<form>
-			<select method="post" action="borrr1.php" name="file">
+			<select method="post" action="erase.php" name="file">
 			<option value="">Seleccione el archivo...</option>'."\n";
 //listado de select
 			for($i=0; $i<count($pn); $i++)
 				{
 				echo '<option value="'.$pn[$i].'">'.$pn[$i].'</option>'."\n";	
 				}
-	         echo '<br /> <input type="submit" method="post" action="borrr1.php" value="Borrar" />
+	         echo '<br /> <input type="submit" method="post" action="erase.php" value="Borrar" />
 			</select>
 		</form>';
 }
